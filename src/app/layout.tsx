@@ -8,7 +8,7 @@ import clsxm from '@/utils/clsxm';
 import type { Metadata } from 'next';
 import type { TLayoutProps } from '@/types/layout.type';
 
-const DEFAULT_TITLE = 'Next.js App Dir Template';
+const DEFAULT_TITLE = 'App Dir With State Management';
 const DEFAULT_DESCRIPTION = 'Next.js app directory template, built with Next.js (TypeScript) and Tailwind CSS.';
 
 export const metadata: Metadata = {

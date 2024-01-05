@@ -1,5 +1,5 @@
 {
-    "name": "nextjs-app-dir-template",
+    "name": "app-dir-with-state-management",
     "description": "Next.js app directory template, built with Next.js (TypeScript) and Tailwind CSS.",
     "version": "0.4.0",
     "license": "MIT",
@@ -25,12 +25,15 @@
         "commitlint": "commitlint --edit"
     },
     "dependencies": {
+        "@headlessui/react": "^1.7.17",
+        "@heroicons/react": "^2.1.1",
         "@next/bundle-analyzer": "^14.0.2",
         "clsx": "^2.0.0",
         "next": "^14.0.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "tailwind-merge": "^1.14.0"
+        "tailwind-merge": "^1.14.0",
+        "zustand": "^4.4.7"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.8.1",
