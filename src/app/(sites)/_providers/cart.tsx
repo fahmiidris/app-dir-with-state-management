@@ -11,7 +11,7 @@ type TCreateStore = {
     setCart: (cart: TCart) => void;
 };
 
-type TCardProviderProps = React.PropsWithChildren<{
+type TCartProviderProps = React.PropsWithChildren<{
     cart: TCart;
 }>;
 
@@ -24,7 +24,7 @@ const createStore = (cart: TCart) => {
 
 const CartContext = React.createContext<ReturnType<typeof createStore> | null>(null);
 
-const CardProvider = ({ children, cart }: TCardProviderProps) => {
+const CartProvider = ({ children, cart }: TCartProviderProps) => {
     const [store] = React.useState(() => createStore(cart));
     return <CartContext.Provider value={store}>{children}</CartContext.Provider>;
 };
@@ -34,4 +34,4 @@ export const useCart = () => {
     return React.useContext(CartContext)!;
 };
 
-export default CardProvider;
+export default CartProvider;
